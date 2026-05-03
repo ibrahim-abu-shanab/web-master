@@ -1,0 +1,156 @@
+@import "tailwindcss";
+
+* {
+  font-family: 'Cairo', 'Tajawal', sans-serif;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #f97316, #1d4ed8);
+  border-radius: 10px;
+}
+
+/* WhatsApp pulse animation */
+@keyframes pulse-whatsapp {
+  0% {
+    box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7);
+    transform: scale(1);
+  }
+  50% {
+    box-shadow: 0 0 0 14px rgba(37, 211, 102, 0);
+    transform: scale(1.08);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
+    transform: scale(1);
+  }
+}
+
+.whatsapp-pulse {
+  animation: pulse-whatsapp 2s infinite;
+}
+
+/* Gradient text */
+.gradient-text {
+  background: linear-gradient(135deg, #f97316, #1d4ed8);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Card hover */
+.service-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.service-card:hover {
+  transform: translateY(-8px);
+}
+
+/* Background logo watermark */
+.bg-logo-watermark {
+  position: absolute;
+  bottom: -60px;
+  right: -80px;
+  width: 500px;
+  height: 500px;
+  opacity: 0.04;
+  transform: rotate(-12deg);
+  pointer-events: none;
+  filter: grayscale(100%);
+}
+
+/* Section reveal animation */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in-up {
+  animation: fadeInUp 0.7s ease forwards;
+}
+
+/* Floating animation */
+@keyframes float {
+  0%, 100% { transform: translateY(0px) rotate(-12deg); }
+  50% { transform: translateY(-20px) rotate(-12deg); }
+}
+.logo-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+/* Nav glass effect */
+.nav-glass {
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+}
+
+/* Hero gradient overlay */
+.hero-gradient-dark {
+  background: linear-gradient(135deg, 
+    rgba(15, 23, 42, 0.97) 0%, 
+    rgba(15, 23, 42, 0.85) 50%, 
+    rgba(15, 23, 42, 0.6) 100%
+  );
+}
+
+.hero-gradient-light {
+  background: linear-gradient(135deg, 
+    rgba(241, 245, 249, 0.97) 0%, 
+    rgba(241, 245, 249, 0.85) 50%, 
+    rgba(241, 245, 249, 0.55) 100%
+  );
+}
+
+/* Animated border */
+@keyframes border-spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Stats counter */
+@keyframes countUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Shine effect on buttons */
+.btn-shine {
+  position: relative;
+  overflow: hidden;
+}
+.btn-shine::after {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -75%;
+  width: 50%;
+  height: 200%;
+  background: rgba(255,255,255,0.18);
+  transform: skewX(-20deg);
+  transition: left 0.5s;
+}
+.btn-shine:hover::after {
+  left: 125%;
+}
+
+/* Smooth scroll */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Dark mode transitions */
+.dark-transition {
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
