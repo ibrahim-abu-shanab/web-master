@@ -469,7 +469,7 @@ const plansData = {
   tr: [
     {
       name: "Tek Sayfalık Site",
-      price: "$100",
+      price: "$150",
       period: "Başlangıç fiyatı",
       features: [
         "Tek sayfa profesyonel tasarım",
