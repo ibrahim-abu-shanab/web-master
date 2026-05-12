@@ -297,10 +297,238 @@ const translations = {
   },
 };
 
+// ========== SEO KEYWORDS ==========
+const SEO_KEYWORDS_TR = [
+  // Web Tasarım & Geliştirme
+  "web tasarım", "web sitesi tasarımı", "profesyonel web tasarım", "kurumsal web tasarım",
+  "web sitesi yapımı", "web sitesi kurma", "web sitesi oluşturma", "web sayfası tasarımı",
+  "modern web tasarım", "responsive web tasarım", "mobil uyumlu web tasarım", "web geliştirme",
+  "web sitesi geliştirme", "özel web tasarım", "web tasarım firması", "web tasarım ajansı",
+  "web tasarım şirketi", "ucuz web tasarım", "uygun fiyatlı web tasarım", "kaliteli web tasarım",
+  "hızlı web sitesi", "web sitesi yaptırma", "web sitesi fiyatları", "web tasarım fiyatları",
+  "HTML CSS tasarım", "React web geliştirme", "web sitesi bakımı", "web sitesi güncellemesi",
+  "UI UX tasarım", "kullanıcı arayüzü tasarımı", "landing page tasarımı", "tek sayfalık web sitesi",
+  "çok sayfalık web sitesi", "kurumsal kimlik tasarımı", "web sitesi yenileme", "web sitesi revizyonu",
+  "özel yazılım geliştirme", "web uygulaması", "web sitesi danışmanlığı", "web projesi",
+  "profesyonel web sitesi", "işletme web sitesi", "şirket web sitesi", "kişisel web sitesi",
+  "portfolio web sitesi", "hizmet web sitesi", "tanıtım web sitesi", "web sitesi tasarlatma",
+  "web tasarım paketleri", "web sitesi paketi", "başlangıç web paketi", "kurumsal web paketi",
+  // Web Tasarım - Ek Anahtar Kelimeler
+  "web site tasarımı", "web yazilim", "web tasarım firmaları", "web tasarım şirketleri",
+  "web sitesi yapan firmalar", "web sitesi yapan ajanslar", "web sitesi tasarlama",
+  "site tasarımı", "site yapımı", "web online", "web sitesi dizayn",
+  "tasarım web siteleri", "shopify site tasarımı", "kolay web tasarım", "butik web tasarım",
+  "freelancer web tasarım", "basit site tasarımları", "basit web sitesi tasarımı",
+  "güzel site tasarımları", "hazır tasarım siteleri", "html5 site yapımı",
+  "internet sitesi yazılımı", "kişisel site tasarımı", "css web tasarım",
+  "bootstrap sayfa tasarımı", "bootstrap site tasarımı", "adobe dreamweaver site yapımı",
+  "ada web tasarım", "akwebtasarim", "ar web ajans", "bionluk web tasarım", "boluweb",
+  "en iyi internet sitesi tasarımları", "en iyi web tasarım şirketleri",
+  "ücretsiz web sitesi tasarımı",
+  // Web Tasarım - Fiyat Odaklı Ek
+  "web tasarım fiyatları 2026", "web site tasarım fiyatları", "web sayfası tasarım fiyatları",
+  "web sitesi tasarımı fiyatları", "site tasarım fiyatları", "profesyonel web sitesi fiyatları",
+  "kurumsal web sitesi fiyatları",
+  // Logo & Grafik Tasarım
+  "logo tasarımı", "grafik tasarım", "kurumsal tasarım", "kurumsal kimlik",
+  "logo oluşturma", "profesyonel logo tasarımı", "online logo tasarım", "kurumsal logo tasarımı",
+  "yapay zeka logo tasarımı", "logo tasarimi", "logo tasarım fiyatları",
+  "freelancer grafiker", "freelance grafiker",
+  "kartvizit tasarımı", "ücretsiz etiket tasarımı", "kutu tasarımı",
+  // E-Ticaret
+  "e-ticaret sitesi", "e-ticaret kurulum", "online mağaza kurma", "online satış sitesi",
+  "dijital mağaza", "e-ticaret yazılımı", "e-ticaret tasarımı", "alışveriş sitesi kurma",
+  "e-ticaret çözümleri", "e-ticaret geliştirme", "ödeme sistemi entegrasyonu", "e-ticaret paketi",
+  "e-ticaret yönetim paneli", "ürün yönetimi", "stok takip sistemi", "sepet sistemi",
+  "güvenli ödeme altyapısı", "SSL sertifikası", "e-ticaret SEO", "e-ticaret pazarlama",
+  "online satış artırma", "e-ticaret danışmanlığı", "e-ticaret fiyatları", "e-ticaret yazılım fiyatı",
+  "e-ticaret sitesi yaptırma", "online mağaza açmak", "internet üzerinden satış", "sanal mağaza",
+  "online satış platformu", "ürün kataloğu sitesi", "B2B e-ticaret", "B2C e-ticaret",
+  "dropshipping sitesi", "toptan satış sitesi", "perakende e-ticaret", "e-ticaret entegrasyonu",
+  "kargo entegrasyonu", "ödeme entegrasyonu", "iyzico entegrasyonu", "PayTR entegrasyonu",
+  // SEO
+  "SEO", "arama motoru optimizasyonu", "Google SEO", "SEO hizmetleri", "SEO danışmanlığı",
+  "SEO ajansı", "SEO şirketi", "SEO firması", "SEO optimizasyonu", "teknik SEO",
+  "içerik SEO", "yerel SEO", "e-ticaret SEO", "SEO analizi", "SEO raporu",
+  "anahtar kelime araştırması", "backlink oluşturma", "link building", "site içi SEO",
+  "site dışı SEO", "Google sıralama", "Google ilk sayfa", "organik trafik artırma",
+  "arama motoru sıralaması", "SEO fiyatları", "aylık SEO paketi", "SEO paketi",
+  "sayfa hızı optimizasyonu", "mobil SEO", "teknik site analizi", "Google Search Console",
+  "meta tag optimizasyonu", "başlık optimizasyonu", "schema markup", "yerel işletme SEO",
+  "harita SEO", "Google My Business optimizasyonu", "SEO içerik yazımı", "blog SEO",
+  "SEO danışmanı", "SEO uzmanı", "Google sıralaması yükseltme", "web sitesi sıralaması",
+  "arama sonuçları optimizasyonu", "organik büyüme", "SEO stratejisi", "içerik stratejisi",
+  "site haritası", "robots.txt", "canonical tag", "hreflang etiketi", "domain otoritesi",
+  "sayfa otoritesi", "DA PA artırma", "SEO denetimi", "SEO iyileştirme", "SEO performansı",
+  // Dijital Pazarlama
+  "dijital pazarlama", "dijital reklam", "online pazarlama", "internet pazarlama",
+  "sosyal medya pazarlama", "sosyal medya yönetimi", "Google reklamları", "Google Ads",
+  "Meta reklamları", "Facebook reklamları", "Instagram reklamları", "reklam yönetimi",
+  "dijital pazarlama ajansı", "dijital pazarlama şirketi", "dijital pazarlama hizmetleri",
+  "içerik pazarlama", "e-posta pazarlama", "performans pazarlama", "marka bilinirliği",
+  "müşteri edinme", "lead generation", "dönüşüm oranı optimizasyonu", "CRO",
+  "reklam bütçesi yönetimi", "ROAS optimizasyonu", "dijital strateji", "pazarlama danışmanlığı",
+  "marka stratejisi", "hedef kitle analizi", "rakip analizi", "pazar araştırması",
+  "dijital analitik", "Google Analytics", "web analizi", "reklam kampanyası yönetimi",
+  "YouTube reklamları", "TikTok reklamları", "Twitter reklamları", "LinkedIn reklamları",
+  "sosyal medya içerikleri", "sosyal medya stratejisi", "influencer pazarlama",
+  "affiliate marketing", "email marketing", "newsletter", "dijital marka yönetimi",
+  "online itibar yönetimi", "müşteri geri bildirimi", "müşteri ilişkileri yönetimi",
+  // Lokasyon - İstanbul
+  "İstanbul web tasarım", "İstanbul web sitesi", "İstanbul e-ticaret", "İstanbul SEO",
+  "İstanbul dijital pazarlama", "İstanbul web geliştirme", "İstanbul web ajansı",
+  "İstanbul yazılım şirketi", "İstanbul dijital ajans", "İstanbul online mağaza",
+  // Lokasyon - Ankara
+  "Ankara web tasarım", "Ankara web sitesi", "Ankara e-ticaret", "Ankara SEO",
+  "Ankara dijital pazarlama", "Ankara web ajansı", "Ankara yazılım şirketi",
+  // Lokasyon - İzmir
+  "İzmir web tasarım", "İzmir web sitesi", "İzmir e-ticaret", "İzmir SEO",
+  "İzmir dijital pazarlama", "İzmir web ajansı",
+  // Lokasyon - Bursa
+  "Bursa web tasarım", "Bursa SEO", "Bursa e-ticaret",
+  "bursa en iyi web tasarım", "bursa site tasarım",
+  // Lokasyon - Diğer şehirler
+  "Antalya web tasarım", "Antalya SEO", "Antalya e-ticaret", "Antalya dijital pazarlama",
+  "Adana web tasarım", "Adana SEO", "Adana e-ticaret",
+  "Gaziantep web tasarım", "Gaziantep SEO", "Gaziantep e-ticaret",
+  "Konya web tasarım", "Konya SEO", "Konya e-ticaret",
+  "Mersin web tasarım", "Mersin SEO", "Mersin e-ticaret",
+  "Kayseri web tasarım", "Kayseri SEO", "Kayseri e-ticaret",
+  "Eskişehir web tasarım", "Eskişehir SEO", "Eskişehir e-ticaret",
+  "Trabzon web tasarım", "Trabzon SEO", "Trabzon e-ticaret",
+  "Samsun web tasarım", "Samsun SEO", "Samsun e-ticaret",
+  "Diyarbakır web tasarım", "Diyarbakır SEO", "Diyarbakır e-ticaret",
+  "Kocaeli web tasarım", "Kocaeli SEO", "Kocaeli e-ticaret",
+  "Şanlıurfa web tasarım", "Şanlıurfa SEO",
+  "Malatya web tasarım", "Malatya SEO", "Malatya e-ticaret",
+  "Elazığ web tasarım", "Elazığ SEO", "Elazığ e-ticaret", "Elazığ dijital pazarlama",
+  "Erzurum web tasarım", "Erzurum SEO",
+  "Van web tasarım", "Van SEO",
+  "Denizli web tasarım", "Denizli SEO", "Denizli e-ticaret",
+  "Manisa web tasarım", "Manisa SEO",
+  "Balıkesir web tasarım", "Balıkesir SEO",
+  "Sakarya web tasarım", "Sakarya SEO",
+  "Tekirdağ web tasarım", "Tekirdağ SEO",
+  "Hatay web tasarım", "Hatay SEO",
+  "Kahramanmaraş web tasarım", "Kahramanmaraş SEO",
+  "Mardin web tasarım", "Mardin SEO",
+  "Batman web tasarım", "Batman SEO",
+  "Muğla web tasarım", "Muğla SEO",
+  "Türkiye web tasarım", "Türkiye SEO", "Türkiye e-ticaret", "Türkiye dijital pazarlama",
+  // Teknik & Backend
+  "API geliştirme", "REST API", "backend geliştirme", "veritabanı tasarımı",
+  "hosting hizmetleri", "domain kayıt", "SSL kurulumu", "yönetim paneli geliştirme",
+  "CMS kurulumu", "mobil uygulama", "PWA geliştirme", "SaaS geliştirme",
+  "bulut çözümleri", "sunucu yönetimi", "güvenlik duvarı", "DDoS koruması",
+  "veri yedekleme", "site bakımı", "teknik destek", "7/24 destek",
+  // Genel & Marka
+  "web master", "webmaster", "web tasarım uzmanı", "dijital ajans", "kreatif ajans",
+  "teknoloji şirketi", "yazılım şirketi", "web ajansı", "dijital çözümler",
+  "dijital dönüşüm", "online varlık", "dijital kimlik", "marka tasarımı",
+  "marka geliştirme", "online marka", "dijital marka", "web varlığı",
+  // Müşteri odaklı & Long-tail
+  "web sitesi yaptırmak istiyorum", "web sitesi nasıl yaptırılır", "web sitesi fiyatı ne kadar",
+  "SEO fiyatları ne kadar", "e-ticaret sitesi açmak", "işimi internete taşımak",
+  "dijitale geçiş", "web sitesi satışları artırma", "müşteri bulmak",
+  "online müşteri kazanma", "Google'da ilk sıraya çıkmak", "Google sıralaması nasıl yükseltilir",
+  "web sitesi trafiği artırma", "organik müşteri kazanma", "ücretsiz SEO danışmanlığı",
+  "ücretsiz web danışmanlığı", "en iyi web tasarım şirketi", "güvenilir web tasarım",
+  "hızlı web sitesi kurma", "profesyonel e-ticaret kurulum", "başarılı web sitesi",
+  "satış artıran web sitesi", "dönüşüm odaklı web tasarım", "kullanıcı dostu web sitesi",
+  "hızlı yüklenen web sitesi", "güvenli web sitesi", "arama motorlarına uygun site",
+  "mobil öncelikli tasarım", "Google core web vitals", "site performansı",
+  "web sitesi analizi", "rakip analizi", "pazar araştırması dijital",
+  "sosyal medya hesap yönetimi", "Facebook sayfa yönetimi", "Instagram hesap yönetimi",
+  "içerik üretimi", "görsel tasarım", "video pazarlama", "YouTube kanal yönetimi",
+  "web sitesi optimizasyonu", "dönüşüm artırma", "müşteri sadakati", "müşteri memnuniyeti",
+  "web tasarım teklifi", "ücretsiz teklif", "web sitesi teklif al", "proje teklifi",
+  // Sektör bazlı web tasarım
+  "restoran web sitesi", "kafe web sitesi", "otel web sitesi", "turizm web sitesi",
+  "doktor web sitesi", "klinik web sitesi", "hastane web sitesi", "eczane web sitesi",
+  "avukat web sitesi", "hukuk bürosu web sitesi", "muhasebe web sitesi", "mali müşavir web sitesi",
+  "inşaat web sitesi", "emlak web sitesi", "gayrimenkul web sitesi", "çiçekçi web sitesi",
+  "güzellik salonu web sitesi", "kuaför web sitesi", "spor salonu web sitesi", "fitness web sitesi",
+  "eğitim web sitesi", "okul web sitesi", "kurs web sitesi", "özel ders web sitesi",
+  "mühendislik web sitesi", "mimarlık web sitesi", "danışmanlık web sitesi", "medya web sitesi",
+  "yayıncılık web sitesi", "haber sitesi", "blog sitesi", "dernek web sitesi", "vakıf web sitesi",
+  // SEO - Sektör bazlı
+  "restoran SEO", "otel SEO", "emlak SEO", "doktor SEO", "klinik SEO",
+  "avukat SEO", "e-ticaret SEO uzmanı", "yerel SEO uzmanı", "ulusal SEO",
+  "Google haritalar optimizasyonu", "Google işletme profili", "yorum yönetimi",
+  "yerel arama optimizasyonu", "mobil arama optimizasyonu", "sesli arama optimizasyonu",
+  "görsel arama optimizasyonu", "YouTube SEO", "video SEO", "podcast SEO",
+  // Dijital pazarlama - Detaylı
+  "Facebook reklam yönetimi", "Instagram reklam yönetimi", "Google Ads yönetimi",
+  "Yandex reklam", "reklam optimizasyonu", "reklam maliyeti düşürme", "CPC optimizasyonu",
+  "CPM optimizasyonu", "retargeting reklam", "remarketing", "hedefli reklam",
+  "A/B testi", "landing page optimizasyonu", "satış hunisi", "müşteri yolculuğu",
+  "dijital pazarlama fiyatları", "sosyal medya danışmanlığı", "içerik takvimi",
+  "hashtag stratejisi", "sosyal medya analizi", "rakip sosyal medya analizi",
+  "marka kimliği oluşturma", "kurumsal sosyal medya", "sosyal medya büyüme",
+  // E-ticaret detaylı
+  "e-ticaret müşteri kazanma", "e-ticaret trafiği artırma", "sepet terk oranı düşürme",
+  "ürün sayfası optimizasyonu", "kategori sayfası SEO", "e-ticaret blog",
+  "e-ticaret email pazarlama", "e-ticaret sosyal medya", "e-ticaret Google Ads",
+  "e-ticaret Meta reklamları", "e-ticaret dönüşüm oranı", "e-ticaret müşteri sadakati",
+  "e-ticaret mobil uygulama", "e-ticaret hızlı teslimat", "e-ticaret lojistik",
+  "çoklu satış kanalı", "marketplace entegrasyonu", "Trendyol entegrasyonu",
+  "Hepsiburada entegrasyonu", "Amazon entegrasyonu", "N11 entegrasyonu",
+  // Web tasarım - Teknik detaylı
+  "Core Web Vitals optimizasyonu", "LCP optimizasyonu", "CLS optimizasyonu",
+  "FID optimizasyonu", "sayfa hızı testi", "GTmetrix optimizasyonu",
+  "PageSpeed Insights", "web sitesi güvenliği", "HTTPS", "güvenlik duvarı",
+  "DDoS koruması", "spam koruması", "veri yedekleme", "felaket kurtarma planı",
+  "web erişilebilirliği", "WCAG uyumluluğu", "çok dil desteği", "Arapça web sitesi",
+  "Türkçe İngilizce web sitesi", "uluslararası SEO", "çok dilli SEO",
+  "web sitesi analiz araçları", "ısı haritası analizi", "kullanıcı davranış analizi",
+  "dönüşüm izleme", "hedef takibi", "e-ticaret izleme", "gelişmiş analitik",
+  // Fiyat ve paketler
+  "ucuz SEO", "uygun fiyatlı SEO", "ekonomik web paketi", "premium web paketi",
+  "kurumsal web paketi", "başlangıç web paketi", "e-ticaret başlangıç paketi",
+  "e-ticaret premium paketi", "aylık web bakım paketi", "yıllık SEO paketi",
+  "web sitesi bakım sözleşmesi", "teknik destek paketi", "7/24 teknik destek",
+  // Müşteri sorguları - Soru formatı
+  "web sitesi nasıl açılır", "e-ticaret nasıl kurulur", "SEO nasıl yapılır",
+  "Google'da nasıl üst sıraya çıkılır", "web sitesi trafiği nasıl artırılır",
+  "sosyal medya nasıl yönetilir", "Facebook reklamı nasıl verilir",
+  "Instagram reklamı nasıl verilir", "Google reklamı nasıl açılır",
+  "web sitesi fiyatı", "SEO fiyatı", "dijital pazarlama fiyatı",
+  "e-ticaret sitesi fiyatı", "logo tasarım fiyatı", "sosyal medya yönetim fiyatı",
+  // Başarı & Sonuç odaklı
+  "satışları artıran web sitesi", "müşteri kazandıran web sitesi", "sonuç odaklı SEO",
+  "ölçülebilir dijital pazarlama", "garantili SEO hizmeti", "hızlı SEO sonuçları",
+  "kısa sürede Google ilk sayfa", "web sitesiyle büyüme", "dijital büyüme",
+  "online satış büyümesi", "marka bilinirliği artırma", "müşteri güveni oluşturma",
+  "referans müşteriler", "başarı hikayeleri", "vaka çalışması", "web tasarım portföyü",
+  // Ekstra & Tamamlayıcı
+  "yazılım çözümleri", "teknoloji danışmanlığı", "IT danışmanlığı", "dijital altyapı",
+  "iş süreçleri otomasyonu", "ERP entegrasyonu", "CRM yazılımı", "müşteri yönetim sistemi",
+  "randevu sistemi", "online rezervasyon", "form sistemi", "anket sistemi",
+  "canlı destek entegrasyonu", "chatbot entegrasyonu", "WhatsApp entegrasyonu",
+  "SMS pazarlama", "push bildirim", "mobil uyumlu tasarım", "tablet uyumlu tasarım",
+  "web sitesi güncelleme", "eski site yenileme", "site hızlandırma", "CDN kullanımı",
+  "görsel optimizasyonu", "video optimizasyonu", "içerik yönetim sistemi",
+  "blog yönetimi", "e-bülten sistemi", "üyelik sistemi", "forum sistemi",
+  "galeri sistemi", "portföy sitesi", "etkinlik web sitesi", "organizasyon web sitesi",
+  "kurumsal blog", "sektör blogu", "web sitesi içeriği", "metin yazarlığı",
+  "SEO metin yazarlığı", "içerik optimizasyonu", "anahtar kelime yoğunluğu",
+  "meta açıklama yazımı", "sayfa başlığı optimizasyonu", "URL yapısı optimizasyonu",
+].join(", ");
+
+const SEO_KEYWORDS_AR = [
+  "تصميم مواقع", "تصميم مواقع احترافية", "برمجة مواقع", "تطوير مواقع", "تصميم موقع إلكتروني",
+  "موقع إلكتروني احترافي", "تصميم متجر إلكتروني", "متجر إلكتروني", "تسويق رقمي",
+  "تحسين محركات البحث", "SEO", "سيو", "تحسين سيو", "ظهور في جوجل", "تصدر نتائج جوجل",
+  "إعلانات جوجل", "إعلانات فيسبوك", "إدارة السوشيال ميديا", "تصميم هوية تجارية",
+  "تطوير تطبيقات", "لوحة تحكم", "استضافة مواقع", "دومين", "شهادة SSL",
+  "تسويق المحتوى", "إدارة الحملات الإعلانية", "زيادة المبيعات", "استشارة مجانية",
+  "خدمات رقمية", "حلول رقمية", "ويب ماستر", "شركة تصميم مواقع", "أفضل مصمم مواقع",
+].join(", ");
+
 // ========== CONSTANTS ==========
 const WHATSAPP_NUMBER = "+905537917977";
 const WHATSAPP_LINK = `https://wa.me/905537917977`;
-const EMAIL = "webmaster@webmaster.com";
+const EMAIL = "webmastr.tr@gmail.com";
 const PHONE = "+905537917977";
 
 // ========== SERVICES DATA (bilingual) ==========
@@ -424,7 +652,7 @@ const plansData = {
   ar: [
     {
       name: "موقع صفحة واحدة",
-      price: "$150",
+      price: "7.999 ₺",
       period: "ابتداءً من",
       features: [
         "تصميم احترافي لصفحة واحدة",
@@ -438,7 +666,7 @@ const plansData = {
     },
     {
       name: "موقع تجاري",
-      price: "$250",
+      price: "14.999 ₺",
       period: "ابتداءً من",
       features: [
         "3–7 صفحات مخصصة بالكامل",
@@ -453,7 +681,7 @@ const plansData = {
     },
     {
       name: "متجر إلكتروني",
-      price: "$800",
+      price: "34.999 ₺",
       period: "ابتداءً من",
       features: [
         "متجر إلكتروني كامل متكامل",
@@ -469,7 +697,7 @@ const plansData = {
   tr: [
     {
       name: "Tek Sayfalık Site",
-      price: "$150",
+      price: "7.999 ₺",
       period: "Başlangıç fiyatı",
       features: [
         "Tek sayfa profesyonel tasarım",
@@ -483,7 +711,7 @@ const plansData = {
     },
     {
       name: "Kurumsal Site",
-      price: "$250",
+      price: "14.999 ₺",
       period: "Başlangıç fiyatı",
       features: [
         "3–7 tamamen özel sayfa",
@@ -498,7 +726,7 @@ const plansData = {
     },
     {
       name: "E-Ticaret Mağazası",
-      price: "$800",
+      price: "34.999 ₺",
       period: "Başlangıç fiyatı",
       features: [
         "Tam entegre e-ticaret mağazası",
@@ -542,7 +770,7 @@ const testimonialsData = {
     {
       name: "Mehmet Yılmaz",
       role: "E-Ticaret Mağazası Sahibi",
-      image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=80&h=80&fit=crop&crop=face&q=81",
+      image: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?q=80&w=1200&auto=format&fit=crop//images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=80&h=80&fit=crop&crop=face&q=81",
       text: "İnanılmaz bir deneyim! Mağaza hayal ettiğimden çok daha iyi çıktı. WebMaster'ın işi gerçekten konuşuyor ve siteyi yayına aldıktan sonraki ilk haftadan itibaren satışlarda artış gördük!",
       rating: 5,
     },
@@ -563,56 +791,25 @@ const testimonialsData = {
   ],
 };
 
-// ========== LANGUAGE TOGGLE BUTTON ==========
-// Syrian flag SVG (simplified)
-
-// New Syrian Arab Republic flag
-const FlagAR = () => {
-  // دالة لحساب نقاط النجمة الخماسية
-  const starPoints = (cx: number, cy: number, r: number) => {
-    const points = [];
-    for (let i = 0; i < 5; i++) {
-      const outerAngle = (Math.PI / 180) * (i * 72 - 90);
-      const innerAngle = (Math.PI / 180) * (i * 72 - 90 + 36);
-      points.push(`${cx + r * Math.cos(outerAngle)},${cy + r * Math.sin(outerAngle)}`);
-      points.push(`${cx + r * 0.4 * Math.cos(innerAngle)},${cy + r * 0.4 * Math.sin(innerAngle)}`);
-    }
-    return points.join(" ");
-  };
-
-  return (
-    <svg width="22" height="15" viewBox="0 0 22 15" style={{ borderRadius: 2, display: "block" }}>
-      {/* Green stripe */}
-      <rect width="22" height="5" y="0" fill="#007A3D"/>
-      {/* White stripe */}
-      <rect width="22" height="5" y="5" fill="#FFFFFF"/>
-      {/* Black stripe */}
-      <rect width="22" height="5" y="10" fill="#000000"/>
-      {/* Three red stars - centered in white stripe (y=7.5) */}
-      <polygon points={starPoints(5.5, 7.5, 2)} fill="#CE1126"/>
-      <polygon points={starPoints(11, 7.5, 2)} fill="#CE1126"/>
-      <polygon points={starPoints(16.5, 7.5, 2)} fill="#CE1126"/>
-    </svg>
-  );
-};
-// Turkish flag SVG
-const FlagTR = () => (
-  <svg width="22" height="15" viewBox="0 0 22 15" style={{ borderRadius: 2, display: "block" }}>
-    <rect width="22" height="15" fill="#E30A17"/>
-    {/* White crescent */}
-    <circle cx="9.5" cy="7.5" r="4" fill="white"/>
-    <circle cx="10.8" cy="7.5" r="3.1" fill="#E30A17"/>
-    {/* White star */}
-    <polygon
-      points="14.5,7.5 15.3,9.9 13.1,8.4 15.9,8.4 13.7,9.9"
-      fill="white"
-    />
+// ========== GLOBE ICON FOR LANGUAGE TOGGLE ==========
+const IconGlobe = () => (
+  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.1" strokeLinecap="round" strokeLinejoin="round">
+    {/* الدائرة الخارجية */}
+    <circle cx="12" cy="12" r="10"/>
+    {/* خطوط الطول — عمودية */}
+    <ellipse cx="12" cy="12" rx="4" ry="10"/>
+    <ellipse cx="12" cy="12" rx="8" ry="10"/>
+    {/* خط الاستواء */}
+    <line x1="2" y1="12" x2="22" y2="12"/>
+    {/* خطوط العرض — منحنية */}
+    <path d="M3.34 7 Q12 4.5 20.66 7"/>
+    <path d="M3.34 17 Q12 19.5 20.66 17"/>
   </svg>
 );
 
 // ========== MAIN COMPONENT ==========
 export default function App() {
-  const [dark, setDark] = useState(true);
+  const [dark, setDark] = useState(false);
   const [lang, setLang] = useState<Lang>("tr");
   const [menuOpen, setMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
@@ -681,6 +878,17 @@ export default function App() {
     document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
   };
 
+  // Inject SEO meta keywords dynamically based on language
+  useEffect(() => {
+    let meta = document.querySelector('meta[name="keywords"]') as HTMLMetaElement | null;
+    if (!meta) {
+      meta = document.createElement("meta");
+      meta.name = "keywords";
+      document.head.appendChild(meta);
+    }
+    meta.content = lang === "tr" ? SEO_KEYWORDS_TR : SEO_KEYWORDS_AR;
+  }, [lang]);
+
   const navLinks = [
     { id: "home", label: t.nav.home },
     { id: "services", label: t.nav.services },
@@ -702,23 +910,16 @@ export default function App() {
     <button
       onClick={() => setLang(lang === "ar" ? "tr" : "ar")}
       title={lang === "ar" ? "Türkçe'ye geç" : "العربية"}
-      className={`flex items-center gap-2 px-3 py-1.5 rounded-xl border transition-all duration-300 cursor-pointer font-bold text-sm select-none
+      className={`flex items-center gap-1.5 px-3 py-1.5 rounded-xl border transition-all duration-300 cursor-pointer font-bold text-sm select-none
         ${dark
           ? "bg-slate-800 border-slate-700 text-slate-200 hover:border-orange-500 hover:bg-slate-700"
           : "bg-slate-100 border-slate-300 text-slate-700 hover:border-orange-500 hover:bg-slate-200"
         }`}
     >
-      {lang === "ar" ? (
-        <>
-          <FlagTR />
-          <span className="hidden sm:inline">TR</span>
-        </>
-      ) : (
-        <>
-          <FlagAR />
-          <span className="hidden sm:inline">AR</span>
-        </>
-      )}
+      <IconGlobe />
+      <span className="hidden sm:inline">
+        {lang === "ar" ? "TR" : "AR"}
+      </span>
     </button>
   );
 
