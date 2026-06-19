@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://webmasterpro.com.tr/sitemap.xml
